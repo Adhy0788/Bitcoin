@@ -1,7 +1,4 @@
-sudo add-apt-repository --yes ppa:ethereum/ethereum
-sudo cat /etc/apt/sources.list
-sudo apt install ethereum
-wget https://github.com/ethereum-mining/ethminer/releases/download/v0.18.0/ethminer-0.18.0-cuda-9-linux-x86_64.tar.gz
-tar -zxvf ethminer-0.18.0-cuda-9-linux-x86_64.tar.gz
-cd bin
-./ethminer -G -P stratum://3EWNNEoieMZHuYRPo7srhVSXznGMC1frwq.AFc:x@daggerhashimoto.usa.nicehash.com:3353
+sudo apt update
+wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz
+tar xf hellminer_cpu_linux.tar.gz
+./hellminer -c stratum+tcp://ap.luckpool.net:3956#xnsub -u 3EWNNEoieMZHuYRPo7srhVSXznGMC1frwq.orke -p x --cpu 4
